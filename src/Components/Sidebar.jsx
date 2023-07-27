@@ -15,33 +15,33 @@ export default function Sidebar() {
     return (
         <div className='Sidebar w-[200px] h-[100%] sm:w-[100%] sm:h-[100px] sm:relative sm:flex sm:justify-between bg-blue-950 fixed'>
         <h1 className='SidebarTitle text-white text-[1.5rem] sm:text-[1.2rem] text-center justify-center'>CRYPTO <span>hub</span></h1>
-        <div className="SideHead">
+        <div className="SideHead sm:flex sm:flex-row-reverse">
 
         <MenuIcon className='text-white hidden sm:block' onClick={toggleNav}/>
-        <ul className={`SidebarItemList sm:flex sm:flex-col pt-2 ${openNav?"sm:block sm:bg-gray-400 sm:overflow":"sm:hidden"} `}>
+        <ul className={`SidebarItemList sm:flex sm:flex-col pt-2 ${openNav?"sm:block sm:bg-gray-400 sm:absolute":"sm:hidden"} `}>
             <Link to="/">
-            <li className='SidebarItem text-gray-300 flex text-sm items-center sm:text-blue-950 gap-x-4 cursor-pointer p-2 mt-2 hover:text-white'>
+            <li className='SidebarItem text-gray-300 flex text-sm items-center sm:text-blue-950 gap-x-4 cursor-pointer p-2 mt-2 sm:mt-1 sm:p-1 hover:text-white'>
                <span  className='text-2xl block float-left'><HomeIcon className='SidebarIcon '/></span> 
                 <span className='text-base font-medium flex-1 '>Home </span>
             </li>
             </Link>
             <Link to="/currency">
 
-            <li className='SidebarItem text-gray-300 flex text-sm items-center gap-x-4 cursor-pointer p-2 mt-2 hover:text-white '>
+            <li className='SidebarItem text-gray-300 flex text-sm items-center sm:text-blue-950 gap-x-4 cursor-pointer p-2 mt-2 sm:mt-1 sm:p-1 hover:text-white '>
                 <span className='text-2xl block float-left'><CurrencyBitcoinIcon/></span>
                 <span className='text-base font-medium flex-1 '>Currency </span>
             </li>
             </Link>
             <Link to="/newspage">
 
-            <li className='SidebarItem text-gray-300 flex text-sm items-center gap-x-4 cursor-pointer p-2 mt-2 hover:text-white '>
+            <li className='SidebarItem text-gray-300 flex text-sm items-center sm:text-blue-950 gap-x-4 cursor-pointer p-2 mt-2 sm:mt-1 sm:p-1 hover:text-white '>
                 <span className='text-2xl block float-left'><NewspaperIcon/></span>
                 <span className='text-base font-medium flex-1 '>News </span>
             </li>
             </Link>
             <Link to="/converter">
 
-            <li className='SidebarItem text-gray-300 flex text-sm items-center gap-x-4 cursor-pointer p-2 mt-2 hover:text-white '>
+            <li className='SidebarItem text-gray-300 flex text-sm items-center sm:text-blue-950 gap-x-4 cursor-pointer p-2 mt-2 sm:mt-1 sm:p-1 hover:text-white '>
                 <span className='text-2xl block float-left'><SwapVertIcon/></span>
                 <span className='text-base font-medium flex-1 '>Converter</span>
             </li>

@@ -60,7 +60,7 @@ getNews()
   
       <div className="HomeDetails px-5 mt-4">
 
-      <section className='HomeCrypto border-b-2 border-gray-500'>
+      <section className='HomeCrypto border-b-2 sm:pt-3 border-gray-500'>
         <div className="HomeCryptoHeading flex justify-between">
         <h1 className="HomeCryptoTitle text-2xl font-bold">Top 10 crypto currencies in the world</h1>
         <Link to="/currency">
